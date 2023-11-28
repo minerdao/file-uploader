@@ -11,9 +11,10 @@ yarn serve
 sudo docker run -it \
   -d \
   --rm \
-  -v ${data_dir}:/data \
-  --name "post_${gpuID}" \
-  minerdao/spacemesh:v1.26 bash -c "${shell}"
+  -v /home/max/data:/upload \
+  -p 0.0.0.0:30000:3000 \
+  --name "post_server" \
+  xiaoliu654321/linshi:latest yarn serve
 ```
 
 ### 客户端

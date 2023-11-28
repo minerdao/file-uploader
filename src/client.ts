@@ -3,8 +3,8 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 const startClient = (directory: string) => {
-  const serverHostname = 'localhost'
-  const serverPort = 3000
+  const serverHostname = '162.219.38.90'
+  const serverPort = 8082
   
   fs.readdir(directory, (err, files) => {
     if (err) {
