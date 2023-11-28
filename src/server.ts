@@ -9,7 +9,7 @@ interface UploadStats {
 }
 
 const uploadStats: Record<string, UploadStats> = {}
-const uploadPath = '/Users/max/data/savepath'
+const uploadPath = '/upload'
 
 const server = http.createServer((req, res) => {
   if (req && req.url && req.method === 'POST') {
